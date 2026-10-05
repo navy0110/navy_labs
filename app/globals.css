@@ -1,0 +1,2 @@
+@import "tailwindcss";
+html{scroll-behavior:smooth}body{margin:0;font-family:var(--font-geist-sans),Arial,sans-serif;background:#fff;color:#152239}*{box-sizing:border-box}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
