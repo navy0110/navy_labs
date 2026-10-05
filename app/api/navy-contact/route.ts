@@ -1,4 +1,4 @@
-const projects = ["Web o landing", "SEO & Ads", "Automatización & CRM", "App inteligente (IA / IoT)", "Solución tech a medida", "Necesito orientación"];
+const projects = ["Web o landing", "SEO & Ads", "Automatización & CRM", "App inteligente (IA / IoT)", "Solución tech a medida", "Ingeniería de datos a medida", "Necesito orientación"];
 export async function POST(request: Request) {
   if (request.headers.get("origin") !== new URL(request.url).origin) return Response.json({ error: "Origen inválido" }, { status: 403 });
   const raw = await request.text();
