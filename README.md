@@ -4,6 +4,8 @@ Landing independiente en `/`. React, Next.js 16, CSS Modules para la identidad v
 
 ## Desarrollo y despliegue
 
+Cloudflare Workers: ver [CLOUDFLARE.md](./CLOUDFLARE.md) para preparar, validar y publicar con OpenNext. Requiere Node.js 22 o superior. El workflow de GitHub es manual y permite validar sin publicar.
+
 Requiere Node.js 20.9 o superior. Ejecutar `npm install`, copiar `.env.example` a `.env.local` y ejecutar `npm run dev`. Abrir http://localhost:3000. Para producción: `npm run lint`, `npm run typecheck`, `npm run build` y `npm start`.
 
 Importar el repositorio en un hosting compatible con Next.js, con directorio raíz del repositorio y comando `npm run build`. Configurar las variables de contacto en el hosting. GitHub almacena el código; el sitio requiere un despliegue para tener una URL pública. GitHub Pages no ejecuta la API de contacto.

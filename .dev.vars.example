@@ -1,0 +1,2 @@
+NEXTJS_ENV=development
+# Use .env.local for local contact variables; do not commit real values.
