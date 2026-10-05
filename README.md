@@ -18,4 +18,8 @@ Antes de publicar: agregar identidad legal, dirección de contacto para derechos
 
 Wordmark tipográfico navy ↗ labs. Navy #101f36, lima #d6ef86, blanco y gris salvia. El gráfico del hero es HTML/CSS, sin recursos externos. Respeta reducción de movimiento, navegación por teclado, etiquetas y estados de envío.
 
-Rutas: `/`, `/privacidad`, `/terminos` y `POST /api/navy-contact`. El secreto del webhook permanece en el servidor. Las páginas legales son una base que debe completarse con los datos reales de la agencia.
+Rutas: `/`, `/portfolio/webs`, `/portfolio/seo`, `/privacidad`, `/terminos` y `POST /api/navy-contact`. El secreto del webhook permanece en el servidor. Las páginas legales son una base que debe completarse con los datos reales de la agencia.
+
+## Portfolio
+
+Editar clientes, categorías y enlaces en `app/portfolio/data.ts`; diseño compartido en `app/portfolio/portfolio-page.tsx` y `portfolio.module.css`. Imágenes locales en `public/portfolio`, optimizadas por Next Image. Las capturas se obtuvieron de los sitios públicos mediante thum.io; Josefina y Plaza de Mayo usan imágenes de sus propias páginas porque la captura mostró una verificación del navegador. Algunas páginas con video o popups pueden requerir capturas manuales más limpias. Las áreas de SEO/Ads se muestran a nivel general; no se atribuyen métricas ni tareas específicas a cada cliente.
