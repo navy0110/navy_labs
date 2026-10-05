@@ -1,6 +1,12 @@
 # Navy Labs
 
-Landing modular en `/navy-labs`, independiente de las páginas de VYNX. React, Next.js 16, CSS Modules para aislar la identidad visual y Tailwind en las páginas legales. No agrega dependencias.
+Landing independiente en `/`. React, Next.js 16, CSS Modules para la identidad visual y Tailwind en las páginas legales. No depende de VYNX ni de servicios de autenticación.
+
+## Desarrollo y despliegue
+
+Requiere Node.js 20.9 o superior. Ejecutar `npm install`, copiar `.env.example` a `.env.local` y ejecutar `npm run dev`. Abrir http://localhost:3000. Para producción: `npm run lint`, `npm run typecheck`, `npm run build` y `npm start`.
+
+Importar el repositorio en un hosting compatible con Next.js, con directorio raíz del repositorio y comando `npm run build`. Configurar las variables de contacto en el hosting. GitHub almacena el código; el sitio requiere un despliegue para tener una URL pública. GitHub Pages no ejecuta la API de contacto.
 
 ## Contacto
 
@@ -12,4 +18,4 @@ Antes de publicar: agregar identidad legal, dirección de contacto para derechos
 
 Wordmark tipográfico navy ↗ labs. Navy #101f36, lima #d6ef86, blanco y gris salvia. El gráfico del hero es HTML/CSS, sin recursos externos. Respeta reducción de movimiento, navegación por teclado, etiquetas y estados de envío.
 
-Para extraer a un proyecto propio: copiar `app/navy-labs`, `app/api/navy-contact` y configurar un root layout con Geist y Tailwind. No trasladar los providers, autenticación o service worker de VYNX. Cambiar rutas al publicar en la raíz. Ejecutar lint, typecheck y build.
+Rutas: `/`, `/privacidad`, `/terminos` y `POST /api/navy-contact`. El secreto del webhook permanece en el servidor. Las páginas legales son una base que debe completarse con los datos reales de la agencia.
