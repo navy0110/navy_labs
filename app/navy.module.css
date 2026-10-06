@@ -2,3 +2,4 @@
 
 .service:has(h3 a){position:relative}.service h3 a{color:inherit}.service h3 a::after{content:"";position:absolute;inset:0;border-radius:7px}.service:has(h3 a) .cardBottom a{position:relative;z-index:1}.service:has(h3 a):focus-within{outline:3px solid #71933a;outline-offset:3px}
 .automationLogos{display:flex;align-items:center;gap:17px;margin:-8px 0 22px}.automationLogos img{width:30px;height:26px;object-fit:contain}.actions{flex-wrap:wrap}
+.techs .stackLogo{width:42px;height:42px;object-fit:contain;margin:0 auto 16px}
