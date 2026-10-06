@@ -21,5 +21,6 @@ export function ContactOptions() {
     </div>
     <a className={styles.cta} href={whatsapp("Hola Navy Labs, quiero contarles mi proyecto.")} target="_blank" rel="noopener noreferrer"><MessageCircle size={20} aria-hidden="true"/> Escribime por WhatsApp <ArrowUpRight size={20} aria-hidden="true"/><span className="sr-only"> (abre en otra pestaña)</span></a>
     <p className={styles.note}>Sin compromiso. Contanos tu idea y definimos el próximo paso.</p>
+    <p className={styles.email}>¿Preferís escribir por email?<br/><a href="mailto:hola@navylabs.tech">hola@navylabs.tech</a></p>
   </div>;
 }
