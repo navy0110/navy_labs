@@ -1,7 +1,7 @@
 export const appProjects = [
   { name: "Dicsys Analyzer", category: "IA & tecnología avanzada", image: "dicsys.jpg", url: "https://www.dicsys.ai/" },
   { name: "Cobrix", category: "Producto digital & gestión", image: "cobrix.jpg", url: "https://cobrix.com.ar/" },
-  { name: "Molotov", category: "Proyecto de app", image: "molotov.jpeg", url: null },
+  { name: "Quienvino app", category: "Visión por computadora & control de aforo", image: "quienvino.jpg", url: null },
 ];
 export const appAreas = [
   { title: "Apps con base en IA", text: "Desarrollo de aplicaciones que integran modelos de IA, procesamiento de información y asistencia inteligente, con pruebas y revisión de sus respuestas." },
