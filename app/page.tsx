@@ -22,7 +22,7 @@ const faqs = [
   ["¿La web y el código son míos?", "Sí. La propuesta contempla la entrega del código desarrollado, accesos y documentación tras el pago acordado. Las licencias de terceros se detallan por separado. Tus cuentas y tu dominio quedan a tu nombre."],
   ["¿Ofrecen mantenimiento después del lanzamiento?", "Sí, como servicio opcional con alcance y precio definidos. Podemos cubrir actualizaciones, monitoreo y mejoras. También entregamos documentación para que puedas trabajar con otro equipo."],
   ["¿Necesito tener los textos y las imágenes?", "Podés traerlos o podemos incluir su creación en la propuesta. Primero definimos tu oferta, público y objetivos. Los recursos y licencias que hagan falta se acuerdan antes de comenzar."],
-  ["¿Cómo sé cuánto va a costar?", "Después de una primera conversación recibís una propuesta con alcance, etapas, inversión y costos de herramientas. Si algo queda fuera del alcance, se cotiza antes de hacerlo."],
+  ["¿Cuánto cuesta trabajar con Navy Labs?", "Cada proyecto tiene un alcance diferente. Después de una primera conversación definimos qué necesitás y recibís una propuesta cerrada con alcance, tiempos y costos antes de empezar."],
 ];
 
 function Brand() { return <span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span>; }
