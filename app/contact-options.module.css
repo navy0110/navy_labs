@@ -10,3 +10,6 @@
 @media(max-width:700px){.card{padding:25px 20px}.card h3{font-size:23px}.option{font-size:13px;padding:11px 16px}.cta{gap:8px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){.option{transition:none}}
 .email{margin:25px 0 0;padding-top:22px;border-top:1px solid #304154;color:#becbd5;font-size:14px;line-height:1.8}.email a{color:#d6ef86;font-weight:600;overflow-wrap:anywhere}.email a:hover{text-decoration:underline}
+.card{border:2px solid #597187;box-shadow:0 5px 0 #a5bb83}
+.option{border-width:2px;background:#1b3248}
+.email{border-top-color:#597187}
