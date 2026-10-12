@@ -9,14 +9,14 @@ import styles from "./navy.module.css";
 
 const whatsappUrl = "https://wa.me/5491168905153?text=" + encodeURIComponent("Hola Navy Labs, quiero contarles mi proyecto.");
 
-export const metadata: Metadata = { title: "Navy Labs — Tecnología con foco en ventas", description: "Webs, SEO, Ads, automatizaciones y apps inteligentes. Convertimos problemas de negocio en soluciones digitales claras." };
+export const metadata: Metadata = { title: "Navy Labs — Tecnología con foco en ventas", description: "Landings web, SEO, Google Ads - Meta Ads, automatizaciones y apps inteligentes. Conectamos tecnología y objetivos de negocio. Conocé nuestros proyectos." };
 
 const services = [
   { icon: Code2, title: "Webs y landings", subtitle: "Diseñadas para convertir.", text: "Una web rápida, clara y pensada para que tus visitas den el siguiente paso. Desde una landing hasta tu sitio completo.", tags: "Diseño UX/UI · Desarrollo · Analítica" },
   { icon: Search, title: "SEO & Ads", subtitle: "Que te encuentren los correctos.", text: "Conectamos tu propuesta con personas que la necesitan. Tráfico orgánico y campañas con objetivos y medición claros.", tags: "SEO técnico · Google Ads · Meta Ads" },
   { icon: Workflow, title: "Automatizaciones & CRM", subtitle: "Menos tareas. Más negocio.", text: "Cada consulta llega al CRM y activa un seguimiento automático. Tu equipo sabe a quién contactar y qué oportunidad avanzar.", tags: "Integraciones · CRM · Workflows" },
   { icon: Radar, title: "Apps inteligentes", subtitle: "Ideas que hacen cosas reales.", text: "IA para asistir a tu equipo e IoT para conectar el mundo físico. Construimos un primer producto útil y validamos antes de escalar.", tags: "IA aplicada · IoT · MVPs" },
-  { icon: Layers, title: "Ingeniería de datos a medida", subtitle: "Datos claros. Decisiones mejores.", text: "Conectamos tus fuentes, automatizamos pipelines y diseñamos dashboards para transformar datos dispersos en información útil para tu negocio.", tags: "Arquitectura · ETL/ELT · Dashboards" },
+  { icon: Layers, title: "Ingeniería de datos a medida", subtitle: "Datos claros. Decisiones mejores.", text: "Conectamos tus fuentes, automatizamos pipelines y diseñamos dashboards para transformar datos dispersos en información útil para tu negocio.", tags: "Arquitectura · Tracking data · Dashboards" },
 ];
 const faqs = [
   ["¿Cuánto tarda un proyecto?", "Una landing suele requerir entre 2 y 4 semanas, según alcance, contenido e integraciones. Una app requiere una estimación propia. Antes de empezar acordamos entregables y un calendario realista."],
