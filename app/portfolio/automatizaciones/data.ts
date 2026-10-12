@@ -17,9 +17,9 @@ export const automationTechnologies = [
 
 // Agregar únicamente marcas confirmadas y sus archivos en public/clients.
 export const automationClients = [
-  { name: "Qendar", logo: "/clients/qendar.png", url: "https://www.qendar.com.ar/" },
+  { name: "Qendar", logo: "/clients/qendar.webp", url: "https://www.qendar.com.ar/" },
   { name: "Temaikèn", logo: "/clients/temaiken.svg", url: "https://www.temaiken.org.ar/bioparque" },
   { name: "TECHO", logo: "/clients/techo.svg", url: "https://techo.org/" },
-  { name: "Agencia Idílica", logo: "/clients/idilica.png", url: "https://idilica.com.ar/" },
+  { name: "Agencia Idílica", logo: "/clients/idilica.webp", url: "https://idilica.com.ar/" },
   { name: "Bloop Agency", logo: "/clients/bloop.svg", url: "https://bloop.agency/" },
 ];

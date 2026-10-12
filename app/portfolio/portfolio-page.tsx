@@ -21,7 +21,7 @@ export function PortfolioPage({ type }: { type: keyof typeof portfolios }) {
       <section id="proyectos" className={gallery.grid} aria-label="Proyectos de clientes">{portfolio.projects.map((project, index) => <article key={project.image} className={gallery.project}>
         <a href={project.url} target="_blank" rel="noopener noreferrer" className={gallery.preview} aria-label={`Visitar ${project.name} (abre en otra pestaña)`}>
           <div className={gallery.browserBar}><span><i/><i/><i/></span><small>{new URL(project.url).hostname}</small><ArrowUpRight size={14}/></div>
-          <div className={gallery.imageWrap}><Image src={`/portfolio/${project.image}.${project.image === "plaza" ? "webp" : "jpg"}`} alt={`${["josefina", "plaza"].includes(project.image) ? "Imagen del" : "Vista del"} sitio de ${project.name}`} width={1200} height={850} sizes="(max-width: 700px) 100vw, 50vw" priority={index < 2}/><span className={gallery.visit}>Visitar sitio <ArrowUpRight size={17}/></span></div>
+          <div className={gallery.imageWrap}><Image src={`/portfolio/${project.image}.webp`} alt={`${["josefina", "plaza"].includes(project.image) ? "Imagen del" : "Vista del"} sitio de ${project.name}`} width={1200} height={850} sizes="(max-width: 700px) 100vw, 50vw" priority={index < 2}/><span className={gallery.visit}>Visitar sitio <ArrowUpRight size={17}/></span></div>
         </a>
         <div className={gallery.caption}><div><p>{project.category}</p><h2><a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}<span className="sr-only"> (abre en otra pestaña)</span></a></h2></div><span className={gallery.number}>0{index + 1}</span></div>
       </article>)}</section>

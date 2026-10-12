@@ -2,9 +2,9 @@ export const dataClients = [
   { name: "Dicsys", logo: "/clients/dicsys.svg", url: "https://www.dicsys.ai/" },
   { name: "Banco Macro", logo: "/clients/macro.svg", url: "https://www.macro.com.ar/" },
   { name: "Banco Supervielle", logo: "/clients/supervielle.svg", url: "https://www.supervielle.com.ar/" },
-  { name: "abc.cl", logo: "/clients/abc.png", url: "https://www.abc.cl/" },
+  { name: "abc.cl", logo: "/clients/abc.webp", url: "https://www.abc.cl/" },
   { name: "Alprestamo", logo: "/clients/alprestamo.svg", url: "https://alprestamo.com.ar/" },
-  { name: "Agencia Idílica", logo: "/clients/idilica.png", url: "https://idilica.com.ar/" },
+  { name: "Agencia Idílica", logo: "/clients/idilica.webp", url: "https://idilica.com.ar/" },
 ];
 export const dataAreas = [
   ["Arquitectura de datos", "Diseño de fuentes, almacenamiento y flujos. Una estructura coherente con el volumen, el uso y la evolución del negocio."],
