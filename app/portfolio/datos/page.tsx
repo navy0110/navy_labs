@@ -1,3 +1,5 @@
+import { pageMetadata } from "../../seo";
+import { PageSchema } from "../../structured-data";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Database } from "lucide-react";
@@ -8,10 +10,11 @@ import gallery from "../portfolio.module.css";
 import automation from "../automatizaciones/automation.module.css";
 import css from "./data.module.css";
 
-export const metadata = { alternates: { canonical: "/portfolio/datos" }, title: "Ingeniería de datos a medida — Navy Labs", description: "Arquitectura, CRO - tracking de datos en Google Analytics 4, ETL/ELT, modelado, dashboards Looker studio, gobierno, seguridad, pronósticos. Experiencia en proyectos de datos." };
+export const metadata = pageMetadata("Ingeniería de datos a medida — Navy Labs", "Arquitectura, CRO - tracking de datos en Google Analytics 4, ETL/ELT, modelado, dashboards Looker studio, gobierno, seguridad, pronósticos. Experiencia en proyectos de datos.", "/portfolio/datos");
 
 export default function DataPage() {
   return <div className={styles.site}>
+    <PageSchema title={metadata.title as string} description={metadata.description as string} path="/portfolio/datos"/>
     <a className={styles.skip} href="#experiencia">Saltar a la experiencia</a>
     <header className={styles.header}><Link href="/" aria-label="Navy Labs, inicio"><span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span></Link><nav aria-label="Navegación principal"><a href="#experiencia">Experiencia</a><a href="#dashboards">Dashboards</a></nav><Link href="/#contacto" className={styles.headerCta}>Hablemos de tu proyecto <ArrowUpRight size={16}/></Link></header>
     <main className={gallery.main}>

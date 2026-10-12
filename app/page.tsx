@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "./seo";
+import { PageSchema } from "./structured-data";
 import Link from "next/link";
 import Image from "next/image";
 import { automationTechnologies } from "./portfolio/automatizaciones/data";
@@ -9,7 +10,7 @@ import styles from "./navy.module.css";
 
 const whatsappUrl = "https://wa.me/5491168905153?text=" + encodeURIComponent("Hola Navy Labs, quiero contarles mi proyecto.");
 
-export const metadata: Metadata = { alternates: { canonical: "/" }, title: "Navy Labs — Tecnología con foco en ventas", description: "Landings web, SEO, Google Ads - Meta Ads, automatizaciones y apps inteligentes. Conectamos tecnología y objetivos de negocio. Conocé nuestros proyectos." };
+export const metadata = pageMetadata("Navy Labs — Tecnología con foco en ventas", "Landings web, SEO, Google Ads - Meta Ads, automatizaciones y apps inteligentes. Conectamos tecnología y objetivos de negocio. Conocé nuestros proyectos.", "/");
 
 const services = [
   { icon: Code2, title: "Webs y landings", subtitle: "Diseñadas para convertir.", text: "Una web rápida, clara y pensada para que tus visitas den el siguiente paso. Desde una landing hasta tu sitio completo.", tags: "Diseño UX/UI · Desarrollo · Analítica" },
@@ -31,6 +32,7 @@ function Heading({ label, title, text }: { label: string; title: string; text?: 
 
 export default function NavyLabsPage() {
   return <div className={styles.site}>
+    <PageSchema title={metadata.title as string} description={metadata.description as string} path="/"/>
     <a className={styles.skip} href="#contenido">Saltar al contenido</a>
     <header className={styles.header}><a href="#" aria-label="Navy Labs, inicio"><Brand /></a><nav aria-label="Navegación principal"><a href="#servicios">Qué hacemos</a><a href="#proceso">Cómo trabajamos</a><a href="#faq">FAQ</a></nav><a className={styles.headerCta} href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Hablar con especialista por WhatsApp (abre en otra pestaña)">Hablar con especialista <ArrowUpRight size={16}/></a></header>
     <main id="contenido">

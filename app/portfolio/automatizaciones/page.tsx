@@ -1,3 +1,5 @@
+import { pageMetadata } from "../../seo";
+import { PageSchema } from "../../structured-data";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Check, Workflow } from "lucide-react";
@@ -6,10 +8,11 @@ import styles from "../../navy.module.css";
 import gallery from "../portfolio.module.css";
 import automation from "./automation.module.css";
 
-export const metadata = { alternates: { canonical: "/portfolio/automatizaciones" }, title: "Automatización de procesos e integración CRM — Navy Labs", description: "Conoce nuestros proyectos de automatización en marketing, contenidos, APIs y CRM. Make, n8n, HubSpot y más." };
+export const metadata = pageMetadata("Automatización de procesos e integración CRM — Navy Labs", "Conoce nuestros proyectos de automatización en marketing, contenidos, APIs y CRM. Make, n8n, HubSpot y más.", "/portfolio/automatizaciones");
 
 export default function AutomationPage() {
   return <div className={styles.site}>
+    <PageSchema title={metadata.title as string} description={metadata.description as string} path="/portfolio/automatizaciones"/>
     <a className={styles.skip} href="#experiencia">Saltar a la experiencia</a>
     <header className={styles.header}>
       <Link href="/" aria-label="Navy Labs, inicio"><span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span></Link>

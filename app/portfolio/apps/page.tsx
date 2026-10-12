@@ -1,3 +1,5 @@
+import { pageMetadata } from "../../seo";
+import { PageSchema } from "../../structured-data";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Code2 } from "lucide-react";
@@ -7,10 +9,11 @@ import gallery from "../portfolio.module.css";
 import automation from "../automatizaciones/automation.module.css";
 import apps from "./apps.module.css";
 
-export const metadata = { alternates: { canonical: "/portfolio/apps" }, title: "Apps inteligentes y Software a medida — Navy Labs", description: "Conocé nuestros proyectos de apps con IA, integraciones de APIs y software a medida. Desarrollo y gestión de productos digitales con foco en tu negocio " };
+export const metadata = pageMetadata("Apps inteligentes y Software a medida — Navy Labs", "Conocé nuestros proyectos de apps con IA, integraciones de APIs y software a medida. Desarrollo y gestión de productos digitales con foco en tu negocio ", "/portfolio/apps");
 
 export default function AppsPage() {
   return <div className={styles.site}>
+    <PageSchema title={metadata.title as string} description={metadata.description as string} path="/portfolio/apps"/>
     <a className={styles.skip} href="#proyectos">Saltar a los proyectos</a>
     <header className={styles.header}>
       <Link href="/" aria-label="Navy Labs, inicio"><span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span></Link>
