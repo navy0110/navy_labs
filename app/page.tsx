@@ -9,7 +9,7 @@ import styles from "./navy.module.css";
 
 const whatsappUrl = "https://wa.me/5491168905153?text=" + encodeURIComponent("Hola Navy Labs, quiero contarles mi proyecto.");
 
-export const metadata: Metadata = { title: "Navy Labs — Tecnología con foco en ventas", description: "Landings web, SEO, Google Ads - Meta Ads, automatizaciones y apps inteligentes. Conectamos tecnología y objetivos de negocio. Conocé nuestros proyectos." };
+export const metadata: Metadata = { alternates: { canonical: "/" }, title: "Navy Labs — Tecnología con foco en ventas", description: "Landings web, SEO, Google Ads - Meta Ads, automatizaciones y apps inteligentes. Conectamos tecnología y objetivos de negocio. Conocé nuestros proyectos." };
 
 const services = [
   { icon: Code2, title: "Webs y landings", subtitle: "Diseñadas para convertir.", text: "Una web rápida, clara y pensada para que tus visitas den el siguiente paso. Desde una landing hasta tu sitio completo.", tags: "Diseño UX/UI · Desarrollo · Analítica" },

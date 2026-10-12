@@ -6,7 +6,7 @@ import styles from "../../navy.module.css";
 import gallery from "../portfolio.module.css";
 import automation from "./automation.module.css";
 
-export const metadata = { title: "Automatización de procesos e integración CRM — Navy Labs", description: "Conoce nuestros proyectos de automatización en marketing, contenidos, APIs y CRM. Make, n8n, HubSpot y más." };
+export const metadata = { alternates: { canonical: "/portfolio/automatizaciones" }, title: "Automatización de procesos e integración CRM — Navy Labs", description: "Conoce nuestros proyectos de automatización en marketing, contenidos, APIs y CRM. Make, n8n, HubSpot y más." };
 
 export default function AutomationPage() {
   return <div className={styles.site}>

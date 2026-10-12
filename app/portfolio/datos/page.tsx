@@ -8,7 +8,7 @@ import gallery from "../portfolio.module.css";
 import automation from "../automatizaciones/automation.module.css";
 import css from "./data.module.css";
 
-export const metadata = { title: "Ingeniería de datos a medida — Navy Labs", description: "Arquitectura, CRO - tracking de datos en Google Analytics 4, ETL/ELT, modelado, dashboards Looker studio, gobierno, seguridad, pronósticos. Experiencia en proyectos de datos." };
+export const metadata = { alternates: { canonical: "/portfolio/datos" }, title: "Ingeniería de datos a medida — Navy Labs", description: "Arquitectura, CRO - tracking de datos en Google Analytics 4, ETL/ELT, modelado, dashboards Looker studio, gobierno, seguridad, pronósticos. Experiencia en proyectos de datos." };
 
 export default function DataPage() {
   return <div className={styles.site}>
