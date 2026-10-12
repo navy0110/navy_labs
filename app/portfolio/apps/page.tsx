@@ -7,7 +7,7 @@ import gallery from "../portfolio.module.css";
 import automation from "../automatizaciones/automation.module.css";
 import apps from "./apps.module.css";
 
-export const metadata = { title: "Apps inteligentes & Producto — Navy Labs", description: "Experiencia en apps con IA, APIs, deep tech, desarrollo, growth, product management y project management. Dicsys Analyzer, Cobrix y Quienvino app." };
+export const metadata = { title: "Apps inteligentes y Software a medida — Navy Labs", description: "Conocé nuestros proyectos de apps con IA, integraciones de APIs y software a medida. Desarrollo y gestión de productos digitales con foco en tu negocio " };
 
 export default function AppsPage() {
   return <div className={styles.site}>
