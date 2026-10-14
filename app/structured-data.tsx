@@ -12,7 +12,7 @@ export function OrganizationSchema() {
         "@type": "Organization",
         "@id": `${siteUrl}/#organization`,
         name: "Navy Labs",
-        logo: { "@type": "ImageObject", url: `${siteUrl}/brand/navy-labs-logo.png` },
+        logo: { "@type": "ImageObject", url: `${siteUrl}/brand/navy-labs-icon.svg` },
         url: `${siteUrl}/`,
         description: "Estrategia, diseño y tecnología con foco en ventas.",
         email: "hola@navylabs.tech",
