@@ -1,3 +1,4 @@
+import { Brand } from "../../brand";
 import { pageMetadata } from "../../seo";
 import { PageSchema } from "../../structured-data";
 import Image from "next/image";
@@ -16,7 +17,7 @@ export default function AppsPage() {
     <PageSchema title={metadata.title as string} description={metadata.description as string} path="/portfolio/apps"/>
     <a className={styles.skip} href="#proyectos">Saltar a los proyectos</a>
     <header className={styles.header}>
-      <Link href="/" aria-label="Navy Labs, inicio"><span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span></Link>
+      <Link href="/" aria-label="Navy Labs, inicio"><Brand/></Link>
       <nav aria-label="Navegación principal"><a href="#proyectos">Proyectos</a><a href="#experiencia">Experiencia</a><a href="#tecnologias">Tecnologías</a></nav>
       <Link href="/#contacto" className={styles.headerCta}>Hablemos de tu proyecto <ArrowUpRight size={16}/></Link>
     </header>

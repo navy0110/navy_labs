@@ -1,3 +1,4 @@
+import { Brand } from "../../brand";
 import { pageMetadata } from "../../seo";
 import { PageSchema } from "../../structured-data";
 import Image from "next/image";
@@ -16,7 +17,7 @@ export default function DataPage() {
   return <div className={styles.site}>
     <PageSchema title={metadata.title as string} description={metadata.description as string} path="/portfolio/datos"/>
     <a className={styles.skip} href="#experiencia">Saltar a la experiencia</a>
-    <header className={styles.header}><Link href="/" aria-label="Navy Labs, inicio"><span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span></Link><nav aria-label="Navegación principal"><a href="#experiencia">Experiencia</a><a href="#dashboards">Dashboards</a></nav><Link href="/#contacto" className={styles.headerCta}>Hablemos de tu proyecto <ArrowUpRight size={16}/></Link></header>
+    <header className={styles.header}><Link href="/" aria-label="Navy Labs, inicio"><Brand/></Link><nav aria-label="Navegación principal"><a href="#experiencia">Experiencia</a><a href="#dashboards">Dashboards</a></nav><Link href="/#contacto" className={styles.headerCta}>Hablemos de tu proyecto <ArrowUpRight size={16}/></Link></header>
     <main className={gallery.main}>
       <Link href="/#servicios" className={gallery.back}><ArrowLeft size={15}/> Volver a servicios</Link>
       <section className={gallery.intro}><span className={styles.eyebrow}>EXPERIENCIA / INGENIERÍA DE DATOS</span><h1>Datos conectados.<br/>Decisiones con fundamento.</h1><p>Ingeniería de datos a medida: diseñamos arquitecturas, desarrollamos pipelines y convertimos información dispersa en modelos y dashboards útiles para tu negocio.</p><div className={gallery.tabs}><Link href="/portfolio/webs">Webs y landings</Link><Link href="/portfolio/seo">SEO & Ads</Link><Link href="/portfolio/automatizaciones">Automatizaciones & CRM</Link><Link href="/portfolio/apps">Apps inteligentes</Link><Link href="/portfolio/datos" aria-current="page">Ingeniería de datos</Link></div></section>

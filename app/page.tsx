@@ -1,3 +1,4 @@
+import { Brand } from "./brand";
 import { pageMetadata } from "./seo";
 import { PageSchema } from "./structured-data";
 import Link from "next/link";
@@ -27,7 +28,6 @@ const faqs = [
   ["¿Cuánto cuesta trabajar con Navy Labs?", "Cada proyecto tiene un alcance diferente. Después de una primera conversación definimos qué necesitás y recibís una propuesta cerrada con alcance, tiempos y costos antes de empezar."],
 ];
 
-function Brand() { return <span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span>; }
 function Heading({ label, title, text }: { label: string; title: string; text?: string }) { return <div className={styles.sectionHeading}><span className={styles.eyebrow}>{label}</span><h2>{title}</h2>{text && <p>{text}</p>}</div>; }
 
 export default function NavyLabsPage() {

@@ -1,3 +1,4 @@
+import { Brand } from "../brand";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, ArrowRight } from "lucide-react";
@@ -10,7 +11,7 @@ export function PortfolioPage({ type }: { type: keyof typeof portfolios }) {
   return <div className={styles.site}>
     <a className={styles.skip} href="#proyectos">Saltar a los proyectos</a>
     <header className={styles.header}>
-      <Link href="/" aria-label="Navy Labs, inicio"><span className={styles.brand}>navy<span className={styles.brandMark}>↗</span><span className={styles.brandLabs}>labs</span></span></Link>
+      <Link href="/" aria-label="Navy Labs, inicio"><Brand/></Link>
       <nav aria-label="Navegación principal"><Link href="/portfolio/webs" aria-current={type === "webs" ? "page" : undefined}>Webs y landings</Link><Link href="/portfolio/seo" aria-current={type === "seo" ? "page" : undefined}>SEO & Ads</Link></nav>
       <Link href="/#contacto" className={styles.headerCta}>Hablemos de tu proyecto <ArrowUpRight size={16}/></Link>
     </header>
